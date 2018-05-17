@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakirzhan/nerds.git"
+  },
+  "author": "Shakirzhan Samarbaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shakirzhan/nerds/issues"
+  },
+  "homepage": "https://github.com/Shakirzhan/nerds#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp-concat-css": "^3.1.0"
+  }
+}
