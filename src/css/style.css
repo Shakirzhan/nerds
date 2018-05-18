@@ -23,3 +23,75 @@ body {
   border: 0;
   clip: rect(0, 0, 0, 0);
 }
+.page-header {
+  max-width: 100%;
+  min-width: 920px;
+  background-color: #eeeeee;
+}
+.page-header__wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-header__logo {
+  padding: 27px 0 0;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item {
+  display: inline-block;
+}
+.main-nav__item a {
+  display: block;
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 63px 0 62px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.main-nav__item a:hover {
+  color: #fb565a;
+}
+.main-nav__item a:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+.basket__button {
+  display: block;
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 63px 0 62px;
+}
+.basket__button:hover {
+  color: #fb565a;
+}
+.basket__button:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+.basket__button:hover .basket__icon {
+  background-image: url(../../img/basket-red.png);
+}
+.basket__button:active .basket__icon {
+  opacity: 0.15;
+}
+.basket__icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 0 0 0 13px;
+  background-image: url(../../img/basket.png);
+  background-repeat: no-repeat;
+  font-size: 0;
+}
