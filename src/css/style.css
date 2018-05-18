@@ -26,7 +26,6 @@ body {
 .page-header {
   max-width: 100%;
   min-width: 920px;
-  background-color: #eeeeee;
 }
 .page-header__wrapper {
   width: 900px;
@@ -94,4 +93,55 @@ body {
   background-image: url(../../img/basket.png);
   background-repeat: no-repeat;
   font-size: 0;
+}
+.page-main {
+  margin-top: -154.6px;
+}
+.advantage {
+  min-height: 436px;
+  background-color: #eeeeee;
+}
+.advantage__wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.advantage-1 {
+  padding: 127px 0 0;
+}
+.advantage-1 .advantage__caption {
+  width: 300px;
+}
+.advantage-1 .advantage__description {
+  width: 380px;
+}
+.advantage__caption {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+}
+.advantage__description {
+  margin: 0;
+  margin-bottom: 29px;
+}
+.advantage__button {
+  display: block;
+  width: 192px;
+  padding: 7px 0 7px;
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fb565a;
+  color: #ffffff;
+}
+.advantage__button:hover {
+  background-color: #d6494d;
+}
+.advantage__button:active {
+  background-color: #b63538;
 }
