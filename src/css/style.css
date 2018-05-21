@@ -240,3 +240,134 @@ body {
 .slider__toggle--last {
   margin: 0;
 }
+.sentence {
+  max-width: 100%;
+  min-width: 920px;
+}
+.sentence__wrapper {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.sentence__blocks {
+  padding: 80px 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.sentence__item {
+  width: 240px;
+}
+.sentence__caption {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.sentence__description {
+  margin: 7px 0 0;
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
+.sentence__button {
+  display: inline-block;
+  width: 140px;
+  margin: 20px 0 0;
+  padding: 8px 0 6px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.sentence__button--background-1 {
+  background-color: #fb565a;
+}
+.sentence__button--background-1:hover {
+  background-color: #d6494d;
+}
+.sentence__button--background-1:active {
+  padding-top: 5px;
+  background-color: #b63538;
+  border-top: 3px solid #9b2d30;
+}
+.sentence__button--background-2 {
+  background-color: #00ca74;
+}
+.sentence__button--background-2:hover {
+  background-color: #01a25e;
+}
+.sentence__button--background-2:active {
+  padding-top: 5px;
+  background-color: #009053;
+  border-top: 3px solid #007b47;
+}
+.sentence__button--background-3 {
+  background-color: #efc84a;
+}
+.sentence__button--background-3:hover {
+  background-color: #d6ae2c;
+}
+.sentence__button--background-3:active {
+  padding-top: 5px;
+  background-color: #c09b24;
+  border-top: 3px solid #a3841f;
+}
+.sentence__line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid #eeeeee;
+}
+.about__wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.about__caption {
+  width: 540px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+}
+.about__description {
+  width: 580px;
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+.about-item-1 {
+  padding-top: 55px;
+}
+.about__link {
+  display: inline-block;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+}
+.about__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about__item {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+.about__item--red {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 1.5px;
+  width: 20px;
+  background-color: #fb565a;
+}

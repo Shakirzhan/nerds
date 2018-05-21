@@ -59,12 +59,53 @@
 					</div>
 				</div>
 			</section>
+			<section class="sentence">
+				<div class="sentence__wrapper">
+					<div class="sentence__blocks">
+						<div class="sentence__item">
+							<img src="img/laptop.png" width="240" alt="laptop">
+							<h2 class="sentence__caption">Веб-сайты</h2>
+							<p class="sentence__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+							<a href="#" class="sentence__button sentence__button--background-1">Заказать</a>
+						</div>
+						<div class="sentence__item">
+							<img src="img/telephones.png" width="240" alt="laptop">
+							<h2 class="sentence__caption">Приложения</h2>
+							<p class="sentence__description">Покорите топ-10 приложений в AppStrore и Google Play</p>
+							<a href="#" class="sentence__button sentence__button--background-2">Заказать</a>
+						</div>
+						<div class="sentence__item">
+							<img src="img/slide.png" width="240" alt="laptop">
+							<h2 class="sentence__caption">Презентации</h2>
+							<p class="sentence__description">Вы даже не подозреваете, насколько вы изумительны!</p>
+							<a href="#" class="sentence__button sentence__button--background-3">Заказать</a>
+						</div>
+						<div class="sentence__line"></div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__wrapper">
+					<div class="about__blocks">
+						<div class="about-item-1">
+							<h2 class="about__caption">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+							<p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>	
+							<span class="about__link">Выполняем заказы на разработку:</span>	
+							<ul class="about__items">
+								<li class="about__item"><div class="about__item--red about__item--small"></div>Веб-сайтов любой сложности</li>
+								<li class="about__item"><div class="about__item--red"></div>Мобильных приложений для iOS и Android</li>
+								<li class="about__item"><div class="about__item--red"></div>Слайдшоу и видео для корпоративных презентаций</li>
+							</ul>					
+						</div>
+					</div>
+				</div>	
+			</section>
 		</main>
 		<script type="text/javascript">
 			var advantage = document.querySelectorAll('.advantage-all');
 			var dot = document.querySelectorAll('.slider__toggle');
 			var currentSlide = 0;
-			var slideInterval = setInterval(nextSlide,2000);
+			var slideInterval = setInterval(nextSlide,10000);
 			function nextSlide() {
 			 if (advantage[currentSlide].classList.contains('advantage--active') &&
 			 		 dot[currentSlide].classList.contains('slider__toggle--active')) {
