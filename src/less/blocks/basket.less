@@ -1,5 +1,7 @@
 .basket__button {
+	position: relative;
 	.text-options();
+	padding-left: 29px;
 
 	&:hover .basket__icon {
 		background-image: url(../../img/basket-red.png);	
@@ -11,10 +13,12 @@
 }
 
 .basket__icon {
+	position: absolute;
+	left: 0;
+	top: 48px;
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	padding: 0 0 0 13px;
 	background-image: url(../../img/basket.png);
 	background-repeat: no-repeat;
 	font-size: 0;

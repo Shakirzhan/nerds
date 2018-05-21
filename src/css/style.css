@@ -24,6 +24,8 @@ body {
   clip: rect(0, 0, 0, 0);
 }
 .page-header {
+  position: relative;
+  z-index: 10;
   max-width: 100%;
   min-width: 920px;
 }
@@ -35,7 +37,7 @@ body {
   justify-content: space-between;
 }
 .page-header__logo {
-  padding: 27px 0 0;
+  padding: 22px 0 0;
 }
 .main-nav__items {
   margin: 0;
@@ -53,7 +55,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  padding: 63px 0 62px;
+  padding: 41px 0 39px;
   padding-left: 17px;
   padding-right: 17px;
 }
@@ -64,6 +66,7 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 .basket__button {
+  position: relative;
   display: block;
   font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 14px;
@@ -71,7 +74,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  padding: 63px 0 62px;
+  padding: 41px 0 39px;
+  padding-left: 29px;
 }
 .basket__button:hover {
   color: #fb565a;
@@ -86,45 +90,40 @@ body {
   opacity: 0.15;
 }
 .basket__icon {
+  position: absolute;
+  left: 0;
+  top: 48px;
   display: inline-block;
   width: 15px;
   height: 15px;
-  padding: 0 0 0 13px;
   background-image: url(../../img/basket.png);
   background-repeat: no-repeat;
   font-size: 0;
 }
 .page-main {
-  margin-top: -154.6px;
+  margin-top: -110px;
 }
 .advantage {
-  min-height: 436px;
+  max-width: 100%;
+  min-width: 920px;
   background-color: #eeeeee;
 }
 .advantage__wrapper {
+  position: relative;
   width: 900px;
   margin: 0 auto;
   padding: 0 10px;
 }
-.advantage-1 {
-  padding: 127px 0 0;
-}
-.advantage-1 .advantage__caption {
-  width: 300px;
-}
-.advantage-1 .advantage__description {
-  width: 380px;
-}
 .advantage__caption {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
 }
 .advantage__description {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 21px;
 }
 .advantage__button {
   display: block;
@@ -144,4 +143,100 @@ body {
 }
 .advantage__button:active {
   background-color: #b63538;
+}
+.advantage--invisible {
+  display: none;
+}
+.advantage--active {
+  display: block;
+}
+.advantage-1 {
+  position: relative;
+  padding: 125px 0 100px;
+}
+.advantage-1 .advantage__background {
+  position: absolute;
+  top: 109px;
+  right: 0;
+  z-index: 5;
+  width: 338px;
+  height: 231px;
+  background-image: url(../../img/all-devices.png);
+  background-repeat: no-repeat;
+}
+.advantage-1 .advantage__caption {
+  width: 300px;
+}
+.advantage-1 .advantage__description {
+  width: 380px;
+}
+.advantage-2 {
+  position: relative;
+  padding: 125px 0 100px;
+}
+.advantage-2 .advantage__background {
+  position: absolute;
+  top: 112px;
+  right: 10px;
+  z-index: 5;
+  width: 230px;
+  height: 249px;
+  background-image: url(../../img/calculator.png);
+  background-repeat: no-repeat;
+}
+.advantage-2 .advantage__caption {
+  width: 470px;
+}
+.advantage-2 .advantage__description {
+  width: 460px;
+}
+.advantage-3 {
+  position: relative;
+  padding: 125px 0 100px;
+}
+.advantage-3 .advantage__background {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  z-index: 5;
+  width: 333px;
+  height: 319px;
+  background-image: url(../../img/robot.png);
+  background-repeat: no-repeat;
+}
+.advantage-3 .advantage__caption {
+  width: 320px;
+}
+.advantage-3 .advantage__description {
+  width: 470px;
+}
+.slider__toggles {
+  position: absolute;
+  top: 290px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider__toggle {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 7px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.slider__toggle--active .slider__dot {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  background-color: #c1c1c1;
+  border-radius: 5px;
+}
+.slider__toggle--last {
+  margin: 0;
 }

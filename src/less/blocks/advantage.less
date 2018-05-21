@@ -1,14 +1,72 @@
 .advantage {
-	min-height: 436px;
+	max-width: 100%;
+	min-width: 920px;
 	background-color: #eeeeee;
+	
+	&__wrapper {
+		position: relative;
+		.container();
+	}
+
+	&__caption {
+		margin: 0;
+		margin-bottom: 14px;
+		font-family: "Roboto Medium", Arial, sans-serif;
+		font-size: 36px;
+		line-height: 36px;
+	}
+
+	&__description {
+		margin: 0;
+		margin-bottom: 21px;
+	}
+
+	&__button {
+		display: block;
+		width: 192px;
+		padding: 7px 0 7px;
+		font-family: "Roboto Medium", Arial, sans-serif;
+		font-size: 12px;
+		line-height: 18px;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		background-color: #fb565a;
+		color: #ffffff;
+
+		&:hover {
+			background-color: #d6494d;
+		}
+
+		&:active {
+			background-color: #b63538;
+		}
+	}
+
+	&--invisible {
+		display: none;
+	}
+
+	&--active {
+		display: block;
+	}
 }
 
-.advantage__wrapper {
-	.container();
-}
+
 
 .advantage-1 {
-	padding: 127px 0 0; // 206 - 161 = 45
+	.advantage--padding();
+
+	.advantage__background {
+		position: absolute;
+		top: 109px;
+		right: 0;
+		z-index: 5;
+		width: 338px;
+		height: 231px;
+		background-image: url(../../img/all-devices.png);
+		background-repeat: no-repeat;
+	}
 
 	.advantage__caption {
 		width: 300px;
@@ -19,37 +77,48 @@
 	}
 }
 
-.advantage__caption {
-	margin: 0;
-	margin-bottom: 20px;
-	font-family: "Roboto Medium", Arial, sans-serif;
-	font-size: 36px;
-	line-height: 36px;
-}
+.advantage-2 {
+	.advantage--padding();
 
-.advantage__description {
-	margin: 0;
-	margin-bottom: 29px;
-}
+	.advantage__background {
+		position: absolute;
+		top: 112px;
+		right: 10px;
+		z-index: 5;
+		width: 230px;
+		height: 249px;
+		background-image: url(../../img/calculator.png);
+		background-repeat: no-repeat;
+	}	
 
-.advantage__button {
-	display: block;
-	width: 192px;
-	padding: 7px 0 7px;
-	font-family: "Roboto Medium", Arial, sans-serif;
-	font-size: 12px;
-	line-height: 18px;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	background-color: #fb565a;
-	color: #ffffff;
-
-	&:hover {
-		background-color: #d6494d;
+	.advantage__caption {
+		width: 470px;
 	}
 
-	&:active {
-		background-color: #b63538;
+	.advantage__description {
+		width: 460px;
+	}
+}
+
+.advantage-3 {
+	.advantage--padding();	
+
+	.advantage__background {
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		z-index: 5;
+		width: 333px;
+		height: 319px;
+		background-image: url(../../img/robot.png);
+		background-repeat: no-repeat;
+	}
+
+	.advantage__caption {
+		width: 320px;
+	}
+
+	.advantage__description {
+		width: 470px;
 	}
 }
