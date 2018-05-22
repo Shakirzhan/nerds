@@ -3,6 +3,12 @@
 		.container();
 	}
 
+	&__blocks {
+		display: flex;
+  	justify-content: space-between;
+		padding: 0 0 72px;
+	}
+
 	&__caption {
 		width: 540px;
 		margin: 0;
@@ -17,7 +23,17 @@
 	}
 
 	&-item-1 {
+		width: 620px;
 		padding-top: 55px;
+	}
+
+	&-item-2 {
+		width: 240px;
+		padding-top: 47px;
+
+		img {
+			text-align: center;
+		}
 	}
 
 	&__link {
@@ -49,5 +65,36 @@
 			width: 20px;
 			background-color: #fb565a;
 		}
+	}
+
+	&__img {
+		display: flex;
+  	justify-content: center;	
+	}
+
+	&__since {
+		position: relative;
+		padding: 20px 0 0;
+		margin-bottom: 20px;
+		text-align: center;
+
+		&--grey {
+			position: absolute;
+			top: 29px;
+			right: 0;
+			left: 0;
+			z-index: 5;
+			border-bottom: 2px solid #eeeeee;
+		}
+	}
+
+	&__word {
+		position: relative;
+		z-index: 10;
+		padding: 0 10px 0;
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		background-color: #ffffff;
 	}
 }

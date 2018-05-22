@@ -326,6 +326,11 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+.about__blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 72px;
+}
 .about__caption {
   width: 540px;
   margin: 0;
@@ -340,7 +345,15 @@ body {
   color: #283136;
 }
 .about-item-1 {
+  width: 620px;
   padding-top: 55px;
+}
+.about-item-2 {
+  width: 240px;
+  padding-top: 47px;
+}
+.about-item-2 img {
+  text-align: center;
 }
 .about__link {
   display: inline-block;
@@ -370,4 +383,31 @@ body {
   height: 1.5px;
   width: 20px;
   background-color: #fb565a;
+}
+.about__img {
+  display: flex;
+  justify-content: center;
+}
+.about__since {
+  position: relative;
+  padding: 20px 0 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about__since--grey {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  border-bottom: 2px solid #eeeeee;
+}
+.about__word {
+  position: relative;
+  z-index: 10;
+  padding: 0 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
