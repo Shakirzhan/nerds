@@ -322,6 +322,7 @@ body {
   border-bottom: 2px solid #eeeeee;
 }
 .about__wrapper {
+  position: relative;
   width: 900px;
   margin: 0 auto;
   padding: 0 10px;
@@ -410,4 +411,60 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+.about__line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid #eeeeee;
+}
+.brand {
+  margin-bottom: 85px;
+}
+.brand__wrapper {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.brand__items {
+  display: flex;
+  justify-content: space-between;
+}
+.brand__item {
+  width: 240px;
+  height: 166px;
+  opacity: 0.2;
+}
+.brand__item-1 {
+  background-image: url(../../img/glukhanko.png);
+  background-repeat: no-repeat;
+  background-position: center 67px;
+}
+.brand__item-2 {
+  background-image: url(../../img/htmlacademy.png);
+  background-repeat: no-repeat;
+  background-position: center 55px;
+}
+.brand__item-3 {
+  background-image: url(../../img/borodinski.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+.brand__item:hover,
+.brand__item:active {
+  opacity: 1;
+  cursor: pointer;
+}
+.brand__line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid #eeeeee;
+}
+.map__location {
+  width: 100%;
+  min-width: 920px;
 }

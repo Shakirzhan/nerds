@@ -1,0 +1,49 @@
+.brand {
+	margin-bottom: 85px;
+	&__wrapper {
+		position: relative;
+		.container();
+	}
+
+	&__items {
+		display: flex;
+    justify-content: space-between;
+	}
+
+	&__item {
+		width: 240px;
+		height: 166px;
+		opacity: 0.2;
+		&-1 {
+			background-image: url(../../img/glukhanko.png);
+			background-repeat: no-repeat;
+			background-position: center 67px;	
+		}
+
+		&-2 {
+			background-image: url(../../img/htmlacademy.png);
+			background-repeat: no-repeat;
+			background-position: center 55px;	
+		}
+
+		&-3 {
+			background-image: url(../../img/borodinski.png);
+			background-repeat: no-repeat;
+			background-position: center 45px;	
+		}
+		
+		&:hover,
+		&:active {
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+
+	&__line {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		border-bottom: 2px solid #eeeeee;
+	}
+}
