@@ -1,0 +1,49 @@
+.social-links {
+	display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	font-size: 0;
+	border-radius: 50%;
+	background-color:  #e1e1e1;
+
+	&:hover {
+		background-color:  #fb565a;	
+	}
+
+	&:active {
+		background-color:  #d6494d;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 62px;
+		height: 62px;
+		background-image: url(../img/sprite.png);
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	&--vk {
+		&::before {
+			background-position: 0 2px;
+		}	
+	}
+
+	&--fb {
+		&::before {
+			background-position: -62px -1px;
+		}	
+	}
+
+	&--in {
+		&::before {
+			background-position: 0 -62px;
+		}	
+	}
+}

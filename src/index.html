@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>nerds</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body>
 		<header class="page-header">
@@ -28,32 +29,32 @@
 		<main class="page-main">
 			<section class="advantage">
 				<div class="advantage__wrapper slider">
-					<div class="advantage-1 advantage-all advantage--invisible advantage--active">
+					<div class="advantage-1 mySlides advantage-all advantage--invisible advantage--active">
 						<div class="advantage__background"></div>
 						<h2 class="advantage__caption">Долго, дорого, скрупулезно.</h2>
 						<p class="advantage__description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 						<a href="#" class="advantage__button">Узнать больше</a>
 					</div>
-					<div class="advantage-2 advantage-all advantage--invisible">
+					<div class="advantage-2 mySlides advantage-all advantage--invisible">
 						<div class="advantage__background"></div>
 						<h2 class="advantage__caption">Любите ли вы математику, как любим ее мы?</h2>
 						<p class="advantage__description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
 						<a href="#" class="advantage__button">Узнать больше</a>
 					</div>
-					<div class="advantage-3 advantage-all advantage--invisible">
+					<div class="advantage-3 mySlides advantage-all advantage--invisible">
 						<div class="advantage__background"></div>
 						<h2 class="advantage__caption">Только наркотики, только хардкор!</h2>
 						<p class="advantage__description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
 						<a href="#" class="advantage__button">Узнать больше</a>
 					</div>
 					<div class="slider__toggles">
-						<i class="slider__toggle slider__toggle--active">
+						<i onclick="currentSlide(1)" class="slider__toggle dot slider__toggle--active">
 							<i class="slider__dot"></i>
 						</i>
-						<i class="slider__toggle">
+						<i onclick="currentSlide(2)" class="slider__toggle dot">
 							<i class="slider__dot"></i>
 						</i>
-						<i class="slider__toggle slider__toggle--last">
+						<i onclick="currentSlide(3)" class="slider__toggle dot slider__toggle--last">
 							<i class="slider__dot"></i>
 						</i>
 					</div>
@@ -129,21 +130,21 @@
 				<div class="map-script"></div>
 			</section>
 		</main>
-		<script type="text/javascript">
-			var advantage = document.querySelectorAll('.advantage-all');
-			var dot = document.querySelectorAll('.slider__toggle');
-			var currentSlide = 0;
-			var slideInterval = setInterval(nextSlide,10000);
-			function nextSlide() {
-			 if (advantage[currentSlide].classList.contains('advantage--active') &&
-			 		 dot[currentSlide].classList.contains('slider__toggle--active')) {
-			 	advantage[currentSlide].classList.remove('advantage--active');
-			 	dot[currentSlide].classList.remove('slider__toggle--active');
-			 }
-			 currentSlide = (currentSlide + 1) % advantage.length;
-			 advantage[currentSlide].classList.add('advantage--active');
-			 dot[currentSlide].classList.add('slider__toggle--active');
-			}
-		</script>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<div class="page-footer__social">
+					<span class="social-links">
+						<a class="social-link social-link--vk" href="#">Мы в вконтакте</a>
+						<a class="social-link social-link--fb" href="#">Мы в facebook</a>
+						<a class="social-link social-link--in" href="#">Мы в instagram</a>
+					</span>
+				</div>
+				<div class="page-footer__words">
+					<h2 class="page-footer__heading">Давайте дружить, это выгодно!</h2>
+					<p class="page-footer__description">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/reviews.js" async></script>
 	</body>
 </html>
