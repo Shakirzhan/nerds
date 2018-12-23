@@ -161,7 +161,7 @@ body {
   z-index: 5;
   width: 338px;
   height: 231px;
-  background-image: url(../../img/all-devices.png);
+  background-image: url(../img/all-devices.png);
   background-repeat: no-repeat;
 }
 .advantage-1 .advantage__caption {
@@ -181,7 +181,7 @@ body {
   z-index: 5;
   width: 230px;
   height: 249px;
-  background-image: url(../../img/calculator.png);
+  background-image: url(../img/calculator.png);
   background-repeat: no-repeat;
 }
 .advantage-2 .advantage__caption {
@@ -201,7 +201,7 @@ body {
   z-index: 5;
   width: 333px;
   height: 319px;
-  background-image: url(../../img/robot.png);
+  background-image: url(../img/robot.png);
   background-repeat: no-repeat;
 }
 .advantage-3 .advantage__caption {
@@ -438,17 +438,17 @@ body {
   opacity: 0.2;
 }
 .brand__item-1 {
-  background-image: url(../../img/glukhanko.png);
+  background-image: url(../img/glukhanko.png);
   background-repeat: no-repeat;
   background-position: center 67px;
 }
 .brand__item-2 {
-  background-image: url(../../img/htmlacademy.png);
+  background-image: url(../img/htmlacademy.png);
   background-repeat: no-repeat;
   background-position: center 55px;
 }
 .brand__item-3 {
-  background-image: url(../../img/borodinski.png);
+  background-image: url(../img/borodinski.png);
   background-repeat: no-repeat;
   background-position: center 45px;
 }

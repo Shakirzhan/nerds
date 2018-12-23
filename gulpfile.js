@@ -17,13 +17,13 @@ gulp.task('style', function()
         .pipe(server.reload({stream: true}));
 });
 
-gulp.task('serve', ['style'], function() 
+gulp.task('index', ['style'], function() 
 {
     browserSync.init({
         server: 'src/'
     });
 
-    gulp.watch('src/less/**/*.less', ['style']);
+    gulp.watch('src/less/**/*.*', ['style']);
     gulp.watch('src/*.html')
         .on('change', browserSync.reload);
 });
